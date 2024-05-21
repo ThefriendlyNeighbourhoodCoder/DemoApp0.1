@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons -->
+		<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css' rel='stylesheet' />
+		<!-- My CSS -->
+		<link rel="stylesheet" href="./stylesheet/style.css">
+    <title>Document</title>
+</head>
+<body>
+   <!-- SIDEBAR -->
+   <section id="sidebar">
+	<a href="#" class="brand">
+		<img src="" alt="logo" id="logo">
+		
+	</a>
+	<ul class="side-menu top" id="side-menu">
+		<li>
+			<a href="user.html">
+				<i class='bx bxs-dashboard' ></i>
+				<span class="text">Dashboard</span>
+			</a>
+		</li>
+		<li>
+			<a href="editProfile.html">
+				<i class='bx bx-edit'></i>
+				<span class="text">Edit Profile</span>
+			</a>
+		</li>
+		<li>
+			<a href="trainingDetails.html">
+				<i class='bx bxs-book-content'></i>
+				<span class="text">Training Details</span>
+			</a>
+		</li>
+		<li class="active">
+			<a href="attendance.html">
+				<i class='bx bx-user-check'></i>
+				<span class="text">Attendance</span>
+			</a>
+		</li>
+		<li>
+			<a href="feedback.html">
+				<i class='bx bxs-report' ></i>
+				<span class="text">Feedback</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<i class='bx bx-notification'></i>
+				<span class="text">Notification</span>
+			</a>
+		</li>
+		
+		
+		
+		
+	</ul>
+	<ul class="side-menu" style="position: absolute;">
+		<li>
+			<a href="settings.html">
+				<i class='bx bx-cog'></i>
+				<span class="text">Settings & Privacy</span>
+			</a>
+		</li>
+		<li>
+			<a href="helpSupport.html">
+				<i class='bx bx-question-mark'></i>
+				<span class="text">Help & Support</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="logout">
+				<i class='bx bxs-log-out-circle' ></i>
+				<span class="text">Logout</span>
+			</a>
+		</li>
+	</ul>
+</section>
+		<!-- SIDEBAR -->
+
+        <!-- CONTENT -->
+		<section id="content">
+			<!-- NAVBAR -->
+			<nav>
+				<i class='bx bx-menu' ></i>
+               
+				
+				<form action="#">
+					<div class="form-input">
+						<input type="search" placeholder="Search...">
+						<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+					</div>
+				</form>
+				<input type="checkbox" id="switch-mode" hidden>
+				<label for="switch-mode" class="switch-mode"></label>
+				
+				
+			</nav>
+			<!-- NAVBAR -->
+	
+			<!-- MAIN -->
+			<main>
+				<div class="head-title">
+					<div class="left">
+						<h1>Attendance</h1>
+						<ul class="breadcrumb">
+							<li>
+								<a href="settings.html">Mark Attendance</a>
+							</li>
+							<li><i class='bx bx-chevron-right' ></i></li>
+							<li>
+								<a class="active" href="index.html">Home</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+                <div class="container3">
+                    <h1>Attendance Tracker</h1>
+                    <!-- Attendance Form -->
+                    <div id="attendanceFormContainer">
+                      
+                      <form id="attendanceForm">
+                        <label for="course">Select Course:</label>
+                        <select id="course" name="course">
+                          <option value="math">Math</option>
+                          <option value="science">Science</option>
+                          <option value="history">History</option>
+                        </select>
+                        
+                        <label for="date">Select Date:</label>
+                        <input type="date" id="date" name="date">
+                        
+                        <label for="attendance">Attendance:</label>
+                        <select id="attendance" name="attendance">
+                          <option value="present">Present</option>
+                          <option value="absent">Absent</option>
+                          <option value="late">Late</option>
+                        </select>
+                        
+                        <button type="submit">Submit</button>
+                      </form>
+                    </div>
+                    
+                <!-- Past Attendance Calendar -->
+                <div id="pastAttendanceContainer">
+                    <h2>Past Attendance</h2>
+                    <div id="calendar"></div>
+                </div>
+            </div>
+
+
+            </main>
+        </section>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.11/index.global.min.js'></script>
+        
+        
+        <script src="./script/script.js"></script>
+    </body>
+</html>

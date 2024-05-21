@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="./stylesheet/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- SIDEBAR -->
+		<section id="sidebar">
+			<a href="#" class="brand">
+				<img src="" alt="logo" id="logo">
+				
+			</a>
+			<ul class="side-menu top" id="side-menu">
+				<li>
+					<a href="user.html">
+						<i class='bx bxs-dashboard' ></i>
+						<span class="text">Dashboard</span>
+					</a>
+				</li>
+				<li  class="active">
+					<a href="editProfile.html">
+						<i class='bx bx-edit'></i>
+						<span class="text">Edit Profile</span>
+					</a>
+				</li>
+                <li>
+					<a href="trainingDetails.html">
+						<i class='bx bxs-book-content'></i>
+						<span class="text">Training Details</span>
+					</a>
+				</li>
+				<li>
+					<a href="attendance.html">
+						<i class='bx bx-user-check'></i>
+						<span class="text">Attendance</span>
+					</a>
+				</li>
+                <li>
+					<a href="feedback.html">
+						<i class='bx bxs-report' ></i>
+						<span class="text">Feedback</span>
+					</a>
+				</li>
+                <li>
+					<a href="#">
+						<i class='bx bx-notification'></i>
+						<span class="text">Notification</span>
+					</a>
+				</li>
+                
+				
+				
+				
+                
+			</ul>
+			<ul class="side-menu" style="position: absolute;">
+                <li>
+					<a href="settings.html">
+						<i class='bx bx-cog'></i>
+						<span class="text">Settings & Privacy</span>
+					</a>
+				</li>
+                <li>
+					<a href="helpSupport.html">
+						<i class='bx bx-question-mark'></i>
+						<span class="text">Help & Support</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="logout">
+						<i class='bx bxs-log-out-circle' ></i>
+						<span class="text">Logout</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<!-- SIDEBAR -->
+        <!-- CONTENT -->
+		<section id="content">
+			<!-- NAVBAR -->
+			<nav>
+				<i class='bx bx-menu' ></i>
+				
+				<form action="#">
+					<div class="form-input">
+						<input type="search" placeholder="Search...">
+						<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+					</div>
+				</form>
+                <a href="#" class="notification">
+                    <i class='bx bxs-bell' ></i>
+                    <span class="num">8</span>
+                </a>
+				<input type="checkbox" id="switch-mode" hidden>
+				<label for="switch-mode" class="switch-mode"></label>
+				
+				
+			</nav>
+			<!-- NAVBAR -->
+	
+			<!-- MAIN -->
+			<main>
+				<div class="head-title">
+					<div class="left">
+						<h1>Edit Profile</h1>
+						<ul class="breadcrumb">
+							<li>
+								<a href="#">Edit Profile</a>
+							</li>
+							<li><i class='bx bx-chevron-right' ></i></li>
+							<li>
+								<a class="active" href="#">Home</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+                <div class="container2">
+                <h3><span class="title">Personal Details</span></h3>
+            
+                    <form action="#">
+                        <div class="form first">
+                            <div class="details personal">
+                                
+            
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>Full Name</label>
+                                        <input type="text" placeholder="Enter your name" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Date of Birth</label>
+                                        <input type="date" placeholder="Enter birth date" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Email</label>
+                                        <input type="text" placeholder="Enter your email" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Mobile Number</label>
+                                        <input type="number" placeholder="Enter mobile number" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Gender</label>
+                                        <select required>
+                                            <option disabled selected>Select gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Others</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Occupation</label>
+                                        <input type="text" placeholder="Enter your ccupation" required>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="details ID">
+                                <span class="title">Identity Details</span>
+            
+                                <div class="fields">
+                                    <div class="input-field">
+                                        <label>ID Type</label>
+                                        <input type="text" placeholder="Enter ID type" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>ID Number</label>
+                                        <input type="number" placeholder="Enter ID number" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Issued Authority</label>
+                                        <input type="text" placeholder="Enter issued authority" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Issued State</label>
+                                        <input type="text" placeholder="Enter issued state" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Issued Date</label>
+                                        <input type="date" placeholder="Enter your issued date" required>
+                                    </div>
+            
+                                    <div class="input-field">
+                                        <label>Expiry Date</label>
+                                        <input type="date" placeholder="Enter expiry date" required>
+                                    </div>
+                                </div>
+            
+                                <button class="nextBtn">
+                                    <span class="btnText">Save details</span>
+                                    
+                                </button>
+                            </div> 
+                        </div>
+                    </div>
+                    </form>
+                </div>
+
+            </main>
+        </section>
+
+        <script src="./script/script.js"></script>
+</body>
+</html>
